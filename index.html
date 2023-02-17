@@ -1,0 +1,37 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Color scheme generator</h2>
+            <h3>Click on the color box and choose the main color for your scheme!</h3>
+        </header>
+        <main>
+            <div id='container' class='container'>
+                <div id='picker' class='picker'>
+                    <input id='seed-color' class='seed-color' type='color'/>
+                    <select name='scheme' id='scheme' class='scheme'>
+                        <option value="">Choose a color scheme...</option>
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome Dark</option>
+                        <option value="monochrome-light">Monochrome Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <button id='get-scheme'>Generate color scheme!</button>         
+                </div>
+                <div id='generated-scheme'>
+                    
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
